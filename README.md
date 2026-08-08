@@ -151,7 +151,6 @@ Jenkins Pipeline
 ![image](https://github.com/user-attachments/assets/13321ee5-5d7b-4976-b409-25d3b865a42a)
 ![image](https://github.com/user-attachments/assets/75a22e4b-ae81-4cad-9c92-21dd90d126a8)
 
-### 📈 Prometheus Monitoring Targets
 
 
 ## ☁️ Infrastructure
