@@ -31,6 +31,7 @@ The project emphasizes Infrastructure as Code, CI/CD automation, DevSecOps, Kube
 - Kubernetes deployment with Helm
 - Prometheus & Grafana Monitoring
 - Automated Environment Configuration
+- Integrated automatic email notification on success or failure of pipeline
 
 
 ### How pipeline will look after deployment:
@@ -44,6 +45,7 @@ The project emphasizes Infrastructure as Code, CI/CD automation, DevSecOps, Kube
 ![image](https://github.com/user-attachments/assets/1ea9d486-656e-40f1-804d-2651efb54cf6)
 
 # Architecture
+```text
 GitHub
    │
    ▼
@@ -67,9 +69,8 @@ Amazon EKS
         │
         ▼
 Prometheus + Grafana
-
+```
 # Technology Stack
-
 Category	        Technologies
 Cloud           	AWS EC2, Amazon EKS
 IaC             	Terraform
@@ -79,11 +80,13 @@ Containers       	Docker
 Orchestration	    Kubernetes
 GitOps	          ArgoCD
 Security	        Trivy, OWASP Dependency Check
+Mail              Gmail 
 Code Quality	    SonarQube
 Monitoring      	Prometheus, Grafana
 Registry	        Docker Hub
 Application     	MERN Stack
 
+```text
 # CI/CD Workflow
 Developer
       │
@@ -112,7 +115,7 @@ Jenkins Pipeline
                     │
                     ▼
       Prometheus + Grafana Monitoring
-
+```
 ## 📚 What I Learned
 
 - Designing production-style CI/CD pipelines
@@ -124,27 +127,22 @@ Jenkins Pipeline
 - Troubleshooting Jenkins pipelines and Kubernetes deployments
 
 ## 🔐 Security & Code Quality
-
 ### 🔍 SonarQube Code Quality Analysis
+![SonarQube Dashboard](Assets/images/sonarqube.png)
 
 ### ✅ SonarQube Quality Gate Passed
-
-
-## 🐳 Containerization
-
-### 🐳 Docker Images Published to Docker Hub
+![Sonarqube gates](Assets/images/gates.png)
 
 
 ## ☸️ Kubernetes & GitOps
-
 ### 🔄 ArgoCD GitOps Deployment Status
-![image](https://github.com/user-attachments/assets/1ea9d486-656e-40f1-804d-2651efb54cf6)
+![SonarQube Dashboard](Assets/images/argocd.png)
 
-### ☸️ Kubernetes Pods Running Successfully
-
-### 🌐 Kubernetes Services & Networking
+### ☸️ Kubernetes Pods Running Successfully &  🌐 Kubernetes Services & Networking
+![SonarQube Dashboard](Assets/images/get_all.png)
 
 ### ☁️ Amazon EKS Cluster Nodes
+![SonarQube Dashboard](Assets/images/cluster.png)
 
 
 ## 📊 Monitoring & Observability
@@ -158,7 +156,7 @@ Jenkins Pipeline
 
 ## ☁️ Infrastructure
 ### ☁️ AWS Cloud Infrastructure
-
+![SonarQube Dashboard](Assets/images/aws.png)
 
 ## 🚀 Application
 ### 🚀 Application Successfully Deployed
